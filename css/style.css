@@ -504,7 +504,6 @@ footer {
         border-radius: 8px;
     }
 }
-
 /* Responsive styles for laptops (max-width: 1200px) */
 @media (max-width: 1200px) {
     .container, .container1, .container2 {

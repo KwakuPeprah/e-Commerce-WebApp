@@ -1,4 +1,6 @@
+// Main JavaScript file for the website
 
+// Smooth scrolling for navigation links
 document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', function(e) {
         const href = this.getAttribute('href');
@@ -172,7 +174,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p style='font-size:1.1em;margin-top:1em;'>Grand Total: <strong>$${grandTotal.toLocaleString()}</strong></p>
                 `;
                 modal.style.display = 'flex';
-                // localStorage.removeItem('cart'); // Do NOT clear cart here to persist after refresh
             });
         }
     }
