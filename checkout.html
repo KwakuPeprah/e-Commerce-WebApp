@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Audiophile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">audiophile</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="headphones.html">Headphones</a>
+                <a href="speakers.html">Speakers</a>
+                <a href="earphones.html">Earphones</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="cart-section container">
+            <h1>CHECKOUT</h1>
+            <div id="order-summary"></div>
+            <form id="checkout-form" class="checkout-form" style="margin-top:2rem;">
+                <label>
+                    Delivery Address:
+                    <input type="text" name="address" required>
+                </label>
+                <label>
+                    Payment Method:
+                    <select name="payment" required>
+                        <option value="card">Credit/Debit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="cod">Cash on Delivery</option>
+                    </select>
+                </label>
+                
+                <button type="submit" class="btn-primary" style="margin-top:1rem;">Place Order</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-container">
+            <div class="logo">audiophile</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="headphones.html">Headphones</a>
+                <a href="speakers.html">Speakers</a>
+                <a href="earphones.html">Earphones</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Twitter" width="24"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733614.png" alt="Instagram" width="24"></a>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2025 Audiophile. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <div id="order-confirmation-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.5);z-index:9999;justify-content:center;align-items:center;">
+        <div style="background:#fff;max-width:400px;width:90vw;padding:2rem 1.5rem;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,0.15);text-align:center;position:relative;">
+            <h2>Thank you for your order!</h2>
+            <div id="modal-summary" style="margin:1.5rem 0;text-align:left;"></div>
+            <button id="close-modal-btn" class="btn-primary" style="margin-top:1.5rem;">Back to Home</button>
+        </div>
+    </div>
+</body>
+</html>
